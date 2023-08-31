@@ -1,5 +1,5 @@
 {
-  "name": "wendelladriel/laravel-validated-dto",
+  "name": "briareos17/laravel-validated-dto",
   "description": "Data Transfer Objects with validation for Laravel applications",
   "type": "library",
   "keywords": [
