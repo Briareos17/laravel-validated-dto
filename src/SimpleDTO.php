@@ -370,15 +370,7 @@ abstract class SimpleDTO implements CastsAttributes
 
     private function buildDataForExport(): array
     {
-        $data = array_map(function($item){
-            if($this->isArrayable($item)) {
-                return $this->formatArrayableValue($item);
-            }
-
-            return $item;
-        }, $this->validatedData);
-
-        return $this->mapData($this->mapBeforeExport(), $data);
+        return $this->mapData($this->mapBeforeExport(), $this->validatedData);
     }
 
     private function mapData(array $mapping, array $data): array
